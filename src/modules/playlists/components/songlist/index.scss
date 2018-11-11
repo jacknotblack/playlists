@@ -1,0 +1,11 @@
+.song-list {
+  display: flex;
+  flex: 1;
+  .add {
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: gray;
+    }
+  }
+}

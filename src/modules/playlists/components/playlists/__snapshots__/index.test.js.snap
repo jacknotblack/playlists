@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayLists /> function props handle input should change input value by chaging state 1`] = `
+<div
+  className="playlists"
+>
+  <div
+    className="add-list"
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value="My uber list"
+    />
+    <button
+      onClick={[Function]}
+    >
+      Add List
+    </button>
+  </div>
+  <div
+    className="lists"
+  >
+    <PlayList
+      key="0"
+      name="aaa"
+      songs={
+        Array [
+          Object {
+            "artist": "Jack",
+            "duration": "1:28",
+            "id": 0,
+            "title": "abc1",
+          },
+          Object {
+            "artist": "Randy",
+            "duration": "5:41",
+            "id": 3,
+            "title": "abc4",
+          },
+        ]
+      }
+    />
+    <PlayList
+      key="1"
+      name="bbb"
+      songs={Array []}
+    />
+    <PlayList
+      key="2"
+      name="ccc"
+      songs={
+        Array [
+          Object {
+            "artist": "Tyler",
+            "duration": "2:33",
+            "id": 2,
+            "title": "abc3",
+          },
+        ]
+      }
+    />
+    <PlayList
+      key="3"
+      name="ddd"
+      songs={
+        Array [
+          Object {
+            "artist": "Randy",
+            "duration": "5:41",
+            "id": 3,
+            "title": "abc4",
+          },
+        ]
+      }
+    />
+    <PlayList
+      key="4"
+      name="zzz"
+      songs={Array []}
+    />
+    <PlayList
+      key="5"
+      name="zzzz"
+      songs={Array []}
+    />
+    <PlayList
+      key="6"
+      name="abc"
+      songs={Array []}
+    />
+    <PlayList
+      key="7"
+      name="abczzz"
+      songs={Array []}
+    />
+    <PlayList
+      key="8"
+      name="123"
+      songs={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`<PlayLists /> render render playList playList is undefined should match snapshot 1`] = `
+<div
+  className="playlists"
+>
+  <div
+    className="add-list"
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      Add List
+    </button>
+  </div>
+  <div
+    className="lists"
+  >
+    <span>
+      No playlist yet
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<PlayLists /> render render playList playList length = 0 should match snapshot 1`] = `
+<div
+  className="playlists"
+>
+  <div
+    className="add-list"
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      Add List
+    </button>
+  </div>
+  <div
+    className="lists"
+  >
+    <span>
+      No playlist yet
+    </span>
+  </div>
+</div>
+`;

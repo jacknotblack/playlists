@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddSongPopup /> render render playList playList is undefined should match snapshot 1`] = `
+<div
+  className="add-song-popup"
+>
+  <div
+    className="playlists-window"
+  >
+    <span
+      className="close-button"
+      onClick={[MockFunction]}
+    >
+      X
+    </span>
+    <br />
+    <span>
+      There are no playlist yet
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<AddSongPopup /> render render playList playList length = 0 should match snapshot 1`] = `
+<div
+  className="add-song-popup"
+>
+  <div
+    className="playlists-window"
+  >
+    <span
+      className="close-button"
+      onClick={[MockFunction]}
+    >
+      X
+    </span>
+    <br />
+    <span>
+      There are no playlist yet
+    </span>
+  </div>
+</div>
+`;

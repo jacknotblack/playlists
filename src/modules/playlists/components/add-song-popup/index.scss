@@ -1,0 +1,27 @@
+.add-song-popup {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  .playlists-window {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    .close-button {
+      text-align: end;
+      cursor: pointer;
+    }
+    .list-item:hover {
+      color: white;
+      background-color: gray;
+      cursor: pointer;
+    }
+  }
+}

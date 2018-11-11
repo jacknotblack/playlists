@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayLists /> render render playList songs is undefined should match snapshot 1`] = `
+<div
+  className="playlist"
+>
+  <span>
+    my awesome list
+  </span>
+  <br />
+  <span>
+    no songs yet
+  </span>
+</div>
+`;
+
+exports[`<PlayLists /> render render playList songs length = 0 should match snapshot 1`] = `
+<div
+  className="playlist"
+>
+  <span>
+    my awesome list
+  </span>
+  <br />
+  <span>
+    no songs yet
+  </span>
+</div>
+`;
