@@ -1,6 +1,6 @@
 import React, { Component, Suspense, lazy } from "react";
 
-import "./App.css";
+import "./App.scss";
 
 const SongList = lazy(() => import("./modules/playlists/containers/songlist"));
 const PlayLists = lazy(() =>
