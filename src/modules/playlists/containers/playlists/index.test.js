@@ -2,7 +2,11 @@ import React from "react";
 import { shallow } from "enzyme";
 import configureStore from "redux-mock-store";
 import ConnectedPlayLists from "./index";
-import { playLists, songs } from "../../testData";
+import {
+  playListswithSongDetailFilled,
+  playLists,
+  songs
+} from "../../testData";
 
 const mockStore = configureStore();
 
@@ -31,7 +35,7 @@ describe("ConnectedPlayLists Container", () => {
 
   describe("mapStateToProps", () => {
     it("maps playLists", () => {
-      expect(wrapper.props().playLists).toEqual(playLists);
+      expect(wrapper.props().playLists).toEqual(playListswithSongDetailFilled);
     });
 
     it("maps songs", () => {

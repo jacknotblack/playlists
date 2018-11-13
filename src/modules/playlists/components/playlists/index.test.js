@@ -1,7 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
 import PlayLists from "./index";
-import { playLists, songs } from "../../testData";
+import {
+  playListswithSongDetailFilled as playLists,
+  songs
+} from "../../testData";
 
 const setup = props => {
   const enzymeWrapper = shallow(<PlayLists {...props} />);

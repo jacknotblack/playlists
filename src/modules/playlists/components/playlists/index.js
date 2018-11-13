@@ -14,8 +14,6 @@ class PlayLists extends Component {
   componentDidMount() {
     this.props.getInitPlayLists();
   }
-  getSongsByIDs = IDs =>
-    IDs.map(id => this.props.songs.find(song => song.id === id));
   inputChangeHandler = e => {
     this.setState({ listNameInput: e.target.value });
   };
@@ -50,11 +48,7 @@ class PlayLists extends Component {
         <div className="lists">
           {playLists !== undefined && playLists.length > 0 ? (
             playLists.map(list => (
-              <PlayList
-                key={list.id}
-                name={list.name}
-                songs={this.getSongsByIDs(list.songs)}
-              />
+              <PlayList key={list.id} name={list.name} songs={list.songs} />
             ))
           ) : (
             <span>No playlist yet</span>
