@@ -28,15 +28,21 @@ exports[`<PlayLists /> function props handle input should change input value by 
         Array [
           Object {
             "artist": "Jack",
+            "duration": "4:13",
+            "id": 5,
+            "title": "abc6",
+          },
+          Object {
+            "artist": "Jack",
+            "duration": "2:27",
+            "id": 8,
+            "title": "abc9",
+          },
+          Object {
+            "artist": "Jack",
             "duration": "1:28",
             "id": 0,
             "title": "abc1",
-          },
-          Object {
-            "artist": "Randy",
-            "duration": "5:41",
-            "id": 3,
-            "title": "abc4",
           },
         ]
       }

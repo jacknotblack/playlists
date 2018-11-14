@@ -1,17 +1,22 @@
 import { connect } from "react-redux";
 import PlayLists from "../../components/playlists";
 import { playListActions as actions } from "../../actions";
+import { range, deepCopy } from "../../../../tools";
 
 const getSongsByIDs = (IDs, songs) => {
+  const idList = deepCopy(IDs);
+  const indexArray = range(0, idList.length - 1);
   let res = [];
   let count = 0;
   let index;
   for (let i = 0; i < songs.length; i++) {
-    index = IDs.findIndex(id => songs[i].id === id);
+    index = idList.findIndex(id => songs[i].id === id);
     if (index > -1) {
-      res[index] = songs[i];
+      res[indexArray[index]] = songs[i];
+      idList.splice(index, 1);
+      indexArray.splice(index, 1);
       count += 1;
-      if (count === IDs.length) break;
+      if (count === idList.length) break;
     }
   }
   return res;

@@ -3,8 +3,9 @@ export const playListswithSongDetailFilled = [
     id: 0,
     name: "aaa",
     songs: [
-      { id: 0, title: "abc1", artist: "Jack", duration: "1:28" },
-      { id: 3, title: "abc4", artist: "Randy", duration: "5:41" }
+      { id: 5, title: "abc6", artist: "Jack", duration: "4:13" },
+      { id: 8, title: "abc9", artist: "Jack", duration: "2:27" },
+      { id: 0, title: "abc1", artist: "Jack", duration: "1:28" }
     ]
   },
   {
@@ -53,7 +54,7 @@ export const playLists = [
   {
     id: 0,
     name: "aaa",
-    songs: [0, 3]
+    songs: [5, 8, 0]
   },
   {
     id: 1,

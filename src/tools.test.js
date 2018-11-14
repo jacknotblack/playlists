@@ -1,4 +1,4 @@
-import { createPlayList, deepCopy } from "./tools";
+import { createPlayList, deepCopy, range } from "./tools";
 
 describe("tools", () => {
   it("createPlayList", () => {
@@ -18,5 +18,10 @@ describe("tools", () => {
     expect(deepCopy(null)).toEqual(null);
     expect(deepCopy(obj)).toEqual(obj);
     expect(deepCopy(obj)).not.toBe(obj);
+  });
+
+  it("range", () => {
+    expect(range(3, 10)).toEqual([3, 4, 5, 6, 7, 8, 9, 10]);
+    expect(range(0, 5)).toEqual([0, 1, 2, 3, 4, 5]);
   });
 });
